@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//    Action Buttons
         binding.CEBtn.setOnClickListener { binding.TextResult.text = "0" }
         binding.CBtn.setOnClickListener { handleClickClearBtn() }
         binding.BSBtn.setOnClickListener { handleClickBackspaceBtn() }
@@ -24,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         binding.ChangeBtn.setOnClickListener { handleClickChaneBtn() }
         binding.ResultBtn.setOnClickListener { handleClickResultBtn() }
 
-//    Number Buttons
         binding.Number0.setOnClickListener { handleClickNumberBtn("0") }
         binding.Number1.setOnClickListener { handleClickNumberBtn("1") }
         binding.Number2.setOnClickListener { handleClickNumberBtn("2") }
